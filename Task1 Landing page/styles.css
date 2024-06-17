@@ -1,0 +1,259 @@
+/* Reset and defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-y: scroll;
+    margin-top: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #4b0082;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a img {
+    margin-right: 10px;
+    max-width: 24px;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 160px auto 20px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #9400d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Player section */
+.player {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.player h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.player ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.player li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #555;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Events section */
+#events {
+    background-color: #9400d3;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#events .event {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#events .event h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #4b0082;
+}
+
+#events .event p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* About section */
+#about {
+    background-color: #dd0393;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+}
+
+/* Upcoming Matches section */
+#upcoming-matches {
+    background-color: #9400d3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#upcoming-matches h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.match-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.match-box .team,
+.match-box .versus {
+    flex: 1;
+    text-align: center;
+}
+
+.match-box .team img,
+.match-box .versus img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.match-box .team p,
+.match-box .versus p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+    color: #555;
+    text-align: center;
+}
+
+.match-box .date {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.match-box .team img,
+.match-box .versus img {
+    max-width: 200px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+}
+
+/* Footer */
+footer {
+    background-color: #4b0082;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+}
